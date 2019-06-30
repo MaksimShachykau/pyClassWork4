@@ -13,7 +13,7 @@ def file_writer(filename, counter):
 
 t = []
 for count in range(10):
-    t.append(Thread(target=file_writer, args=("File_number{}".format(1), count)))
+    t.append(Thread(target=file_writer, args=("File_number {}".format(count), count)))
 
 for thr in t:
     thr.start()
