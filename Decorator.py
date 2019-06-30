@@ -4,9 +4,9 @@ from threading import Thread
 
 
 def file_writer(filename, counter):
-    print("Srart t with PID {}".format(os.getpid()))
+    print("Start t with PID {}".format(os.getpid()))
     time.sleep(10)
-    with open(filename,'a') as f:
+    with open(filename, 'a') as f:
         for line in range(counter):
             f.write("String number {} \n".format(str(counter)))
 
