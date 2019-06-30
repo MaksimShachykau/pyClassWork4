@@ -13,5 +13,5 @@ def my_decorator(my_function):
 @my_decorator
 def foo(a=100):
     for filename in range(a):
-        with open(str('file'+ str(filename)), mode='a') as file:
+        with open(str('file' + str(filename)), mode='a') as file:
             file.write("String number {}".format(str(filename)))
