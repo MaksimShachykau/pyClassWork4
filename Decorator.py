@@ -1,4 +1,6 @@
-# decorator
+
+
+# декоратор - это способ вызова функции внутри функции
 def my_decorator(my_function):
     def wrapper():
         print("Start decoration")
