@@ -3,5 +3,10 @@ class Foo:
         self.bar = bar
 
     @staticmethod
-    def method():
-        pass
+    def create_file():
+        with open("file", 'a') as f:
+            f.write("Hehe")
+
+
+Foo.create_file()
+
